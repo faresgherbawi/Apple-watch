@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    /* بيشيل السكرول لما احدده */
+    max-width: 1170px;
+    /* توسيط */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.product-left,
+.product-right {
+    width: 50%;
+    padding: 48px 32px;
+}
+
+.product-left img {
+    width: 100%;
+    display: block;
+}
+
+.product-right {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 500px;
+    margin: 32px auto 16px auto;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+}
+
+.btns-group {
+    margin-top: 40px;
+}
+
+.btn-solid {
+    background-color: #0071e3;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.btn-solid:hover {
+    background-color: #0466c9;
+    transition: all ease 0.2s;
+}
+
+.btn-link {
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+
+/* button */
+
+.btn-link .fa {
+    font-size: 12px;
+}
+
+#product-sec-1 {
+    background-color: #000;
+}
+
+
+/* Start Section #2 */
+
+#product-sec-2 {
+    background-color: #fafafa;
+}
+
+#product-sec-2 .product-left {
+    order: 2;
+}
+
+#product-sec-2 .product-right {
+    order: 1;
+}
+
+#product-sec-2 .product-right {
+    color: #000;
+}
+
+
+/* End Section #2 */
+
+
+/* Start Section #3 */
+
+#product-sec-3 {
+    background: url(images/watch-img-3.jpg) center/ cover no-repeat;
+    background-color: #fafafa;
+}
+
+#product-sec-3 .container {
+    align-items: flex-end;
+}
+
+#product-sec-3 .product-right {
+    color: #000;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+
+/* End Section #3 */
+
+
+/* Start Section #3 */
+
+#product-sec-4 {
+    background: url(images/watch-img-4.jpg) center/ cover no-repeat;
+    background-color: #fafafa;
+}
+
+#product-sec-4 .container {
+    align-items: flex-end;
+}
+
+#product-sec-4 .product-right {
+    color: white;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+
+/* End Section #3 */
+
+
+/* Start dotted */
+
+.dotted-btns {
+    /* عشان يضلوا معنا فكل الاقسام */
+    position: fixed;
+    /* عشان نوسطهم */
+    top: 50%;
+    transform: translateY(-50%);
+    right: 32px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    color: rgb(221, 221, 221);
+}
+
+
+/* End dotted */
+
+
+/* Start Footer */
+
+.copyright {
+    text-align: center;
+    margin-top: -60px;
+    color: white;
+}
+
+.copyright span {
+    font-weight: 600;
+}
+
+
+/* End Footer */
+
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .product-left img {
+        margin: a auto;
+    }
+    #product-sec-1 .container,
+    #product-sec-2 .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-right h2 {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .product-right,
+    .product-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .btn-solid {
+        margin-right: 0;
+        margin-bottom: 16px;
+        display: block;
+    }
+    .dotted-btns {
+        right: 16px;
+    }
+    .dot {
+        font-size: 14px;
+    }
+}
